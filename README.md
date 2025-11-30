@@ -338,7 +338,185 @@ Comparison Operators
 d = 5 > 4
 print(d)
 true
+#day 3 of learning python
+📘 Day 3 – Python Notes (Strings, Lists & Tuples)
+-----------------------------------
+⭐ Advanced String Slicing
+word = "animals"
 
+word[1:6]      # aimals
+word[:6]       # animal
+word[0:]       # animals
+word[0:7]      # animals
+⭐ String Functions
+1. Find Length
+word = "Pen"
+print(len(word))
+# Output: 3
+2. endswith()
+word = "Pen"
+print(word.endswith("n"))
+# Output: True
+3. startswith()
+Same as endswith(), but checks beginning of the string.
+
+4. capitalize()
+name = "vidhi"
+print(name.capitalize())
+# Output: Vidhi
+5. count()
+"App".count("p")
+# Output: 2
+6. find()
+word = "Python"
+word.find("hon")     # returns position
+7. replace()
+word = "I love Python"
+word.replace("Python", "Java")
+8. Other string methods
+upper()
+
+lower()
+
+title()
+
+etc.
+
+-----------------------------------
+⭐ Escape Sequence Characters
+1. \n → New Line
+a = "My name is Vidhi \n I am doing BCA"
+print(a)
+Output:
+
+My name is Vidhi
+I am doing BCA
+2. \t → Tab Space
+a = "My name is Vidhi \t I am doing BCA"
+print(a)
+3. \" → Double Quotes Inside String
+a = "My name is \"Vidhi\""
+print(a)
+Output:
+
+My name is "Vidhi"
+-----------------------------------
+⭐ Practice Set – Strings
+Q1. Program to display entered name with Good Afternoon
+name = input("Your name: ")
+print("Good Afternoon, " + name)
+Q2. Fill a letter template
+Template:
+
+Dear <|name|>,
+You are selected!
+<|date|>
+Code:
+
+letter = """Dear <|name|>,
+You are selected!
+<|date|>"""
+
+print(letter.replace("<|name|>", "Vidhi").replace("<|date|>", "30 Nov, 2025"))
+Q3. Detect double spaces
+sentence = "I am  19 years old"
+print(sentence.find("  "))
+# Output: 3
+Q4. Replace double spaces with single space
+sentence = "I am  19 years old"
+print(sentence.replace("  ", " "))
+Q5. Format letter using escape sequences
+letter = "Dear Vidhi,\n\tYou are doing great in Python.\nLove you!"
+print(letter)
+-----------------------------------
+⭐ Lists and Tuples (Chapter 4)
+Lists
+Used to store multiple values.
+
+Mutable (can be changed).
+
+Example
+friends = ["Apple", "Orange", 5, 24.6, True, "Sneha"]
+
+print(friends[0])   # Apple
+friends[0] = "Banana"
+print(friends[0])   # Banana
+List Methods
+friends = ["Apple", "Orange", 5, 24.6, True]
+
+friends.append("Vidhi")
+print(friends)
+Other Methods
+sort()
+
+reverse()
+
+insert(position, value)
+
+pop(position)
+
+etc.
+
+-----------------------------------
+⭐ Tuples in Python
+Tuples are immutable (cannot be changed).
+
+a = (1, 45, 342, 2424, False, "Rohini", "Shivam")
+print(type(a))
+Tuple Methods
+1. count()
+a = (1, 45, 45, 7)
+print(a.count(45))
+# Output: 2
+2. index()
+a = (1, 45, 3424)
+print(a.index(3424))
+# Output: 2
+-----------------------------------
+⭐ Practice Set – Lists & Tuples
+Q1. Store 3 fruits entered by user
+fruits = []
+
+f1 = input("Enter fruit name: ")
+fruits.append(f1)
+
+f2 = input("Enter fruit name: ")
+fruits.append(f2)
+
+f3 = input("Enter fruit name: ")
+fruits.append(f3)
+
+print(fruits)
+Q2. Enter marks of 3 students & sort
+marks = []
+
+m1 = int(input("Enter marks: "))
+marks.append(m1)
+
+m2 = int(input("Enter marks: "))
+marks.append(m2)
+
+m3 = int(input("Enter marks: "))
+marks.append(m3)
+
+marks.sort()
+print(marks)
+Q3. Show that tuples cannot be changed
+a = (34, 234, "Harry")
+a[2] = "Larry"     # ERROR: tuple cannot be changed
+Q4. Sum a list with 4 numbers
+a = [2, 8, 1, 3]
+print(sum(a))      # Output: 14
+Q5. Count the number of zeros in tuple
+a = (7, 0, 8, 0, 0, 9)
+n = a.count(0)
+print(n)           # Output: 3
+
+
+
+
+Screenshot_2025-11-30-21-35-32-213_com.whatsapp.jpgNo file chosen
+ChatGPT can make mistakes. Check important info. See Cookie Preferences.
 
 
 
