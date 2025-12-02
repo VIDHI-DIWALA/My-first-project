@@ -511,12 +511,81 @@ Q5. Count the number of zeros in tuple
 a = (7, 0, 8, 0, 0, 9)
 n = a.count(0)
 print(n)           # Output: 3
+#day 4 of learning python
+Chapter 5 – Dictionary & Sets
+Sets
+Definition
+A set is a collection of well-defined objects.
 
+Examples
+S = {1, 5, 32}        # This is a set
+S = set()            # This is how an empty set is made
+S = {1, 5, 32, 5, 5}  # Duplicate values are removed
+print(S)             # Output: {1, 5, 32}
+Set Methods
+S = {1, 5, 32, 54, 5, 5, 5, "Harry"}
 
+S.add(566)
+print(S)
+# Output: {32, 1, 5, 54, 566, "Harry"}
+Properties of Set
+Sets are unordered
 
+Sets are unindexed
 
-Screenshot_2025-11-30-21-35-32-213_com.whatsapp.jpgNo file chosen
-ChatGPT can make mistakes. Check important info. See Cookie Preferences.
+Cannot contain duplicate values
 
+Cannot change individual items (no indexing)
+
+Set Operations
+Example:
+S = {4, 3, 1, 83}
+
+len(S)          # length of set
+S.remove(1)     # removes value 1 → {4, 3, 83}
+S.pop()         # removes a random value
+S.clear()       # empties the set
+Union / Intersection
+S1 = {2, 4, 5, 6, 7}
+S2 = {7, 8, 1, 9, 83}
+
+print(S1.union(S2))
+# Output: {1, 2, 4, 5, 6, 7, 8, 9, 83}
+
+print(S1.intersection(S2))
+# Output: {7}
+Practice Questions (Sets)
+Q1 – Input numbers and display unique values
+S = set()
+
+n = int(input("Enter a number: "))
+S.add(n)
+
+n = int(input("Enter a number: "))
+S.add(n)
+
+n = int(input("Enter a number: "))
+S.add(n)
+
+print(S)
+Q2 – Can a set contain 18 (int) and "18" (str)?
+S = set()
+S.add(18)
+S.add("18")
+print(S)
+# Output: {18, "18"}
+Q3 – Length of the set
+S = set()
+S.add(20)
+S.add(20.0)
+S.add("20")
+
+print(len(S))
+# Output: 2
+Reason:
+
+20 (int) and 20.0 (float) are considered equal
+
+"20" is a string 
 
 
