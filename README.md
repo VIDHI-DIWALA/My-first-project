@@ -587,5 +587,168 @@ Reason:
 20 (int) and 20.0 (float) are considered equal
 
 "20" is a string 
+#ANOTHER DAY OF LEARNING PYTHON
+## 🔁 Loop Control Statements
+### 🔹 Break Statement
+for i in range(100):
+    if i == 34:
+        break
+    print(i)
+📌 break stops the loop immediately.
+
+### 🔹 Continue Statement
+for i in range(100):
+    if i == 34:
+        continue
+    print(i)
+📌 continue skips the current iteration.
+
+### 🔹 Pass Statement
+for i in range(100):
+    pass
+i = 0
+while i < 45:
+    print(i)
+    i += 1
+📌 pass means “do nothing” (placeholder).
+
+# 🔄 Loops in Python
+## ➡️ For Loop Through a List
+l = [1, 4, 6, 346, 6, 764]
+
+for i in l:
+    print(i)
+## ➡️ For Loop Through a Tuple
+t = (6, 231, 95, 122)
+
+for i in t:
+    print(i)
+## ➡️ For Loop Through a String
+s = "Vidhi"
+
+for ch in s:
+    print(ch)
+## ➡️ For Loop with Else
+l = [1, 7, 8]
+
+for item in l:
+    print(item)
+else:
+    print("done")
+# 🔁 While Loop
+i = 1
+
+while i <= 6:
+    print(i)
+    i += 1
+## ➡️ While Loop Through a List
+l = ["Harsh", "Vidhi", "Rehana", 1, False]
+
+i = 0
+while i < len(l):
+    print(l[i])
+    i += 1
+# 📝 Practice Questions
+## Q1️⃣ Username Should Contain At Least 10 Characters
+username = input("Enter your username: ")
+
+if len(username) < 10:
+    print("Username is less than 10 characters")
+else:
+    print("OK")
+## Q2️⃣ Check if Name Exists in a List
+l = ["Vidhi", "Vinita", "Krishita"]
+
+name = input("Enter your name: ")
+
+if name in l:
+    print("Your name is in the list")
+else:
+    print("Your name is not in the list")
+## Q3️⃣ Pass or Fail (40% overall + 33 marks each subject)
+marks1 = int(input("Enter marks 1: "))
+marks2 = int(input("Enter marks 2: "))
+marks3 = int(input("Enter marks 3: "))
+
+total_percentage = (marks1 + marks2 + marks3) / 3
+
+if total_percentage >= 40 and marks1 >= 33 and marks2 >= 33 and marks3 >= 33:
+    print("You passed")
+else:
+    print("You failed")
+## Q4️⃣ Detect Spam Comment
+Spam words:
+
+make a lot of money
+
+buy now
+
+click this
+
+s1 = "make a lot of money"
+s2 = "buy now"
+s3 = "click this"
+
+message = input("Enter your comment: ")
+
+if s1 in message or s2 in message or s3 in message:
+    print("This is spam!")
+else:
+    print("This is not a spam")
+# 🧠 Logical Operators
+Operator	Meaning
+and	Both conditions must be true
+or	At least one condition is true
+not	Reverses the condition
+# 📝 Practice Set (Chapter 6)
+## Q5️⃣ Find the Greatest of 4 Numbers
+a1 = int(input("Enter no. 1: "))
+a2 = int(input("Enter no. 2: "))
+a3 = int(input("Enter no. 3: "))
+a4 = int(input("Enter no. 4: "))
+
+if a1 > a2 and a1 > a3 and a1 > a4:
+    print("Greatest number is a1:", a1)
+
+elif a2 > a1 and a2 > a3 and a2 > a4:
+    print("Greatest number is a2:", a2)
+
+elif a3 > a1 and a3 > a2 and a3 > a4:
+    print("Greatest number is a3:", a3)
+
+else:
+    print("Greatest number is a4:", a4)
+# 🔧 Conditional Statements
+## Basic If–Else
+a = int(input("Enter your age: "))
+
+if a >= 18:
+    print("You can drive")
+else:
+    print("You cannot drive")
+## If–Elif–Else
+a = int(input("Enter your age: "))
+
+if a >= 18:
+    print("You can drive")
+    print("Good! go for driving")
+
+elif a < 0:
+    print("You are entering negative age")
+
+else:
+    print("You are below the age")
+## Small Test
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("yes")
+else:
+    print("no")
 
 
+
+
+
+8 filesNo file chosen
+ChatGPT can make mistakes. Check important info. See Cookie Preferences.
