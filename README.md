@@ -747,8 +747,47 @@ else:
     print("no")
 
 
+#PYTHON PRACTICE PROGRAMS (CHAPTER 7)
 
+Q1. Write a program to find whether the given number is prime or not.
+n = int(input("Enter a number: "))
 
+for i in range(2, n):
+    if n % i == 0:
+        print("Number is not prime")
+        break
+else:
+    print("Number is prime")
+Q2. Write a program to find the sum of first n natural numbers using while loop.
+n = int(input("Enter the number: "))
+i = 1
+sum = 0
 
-8 filesNo file chosen
-ChatGPT can make mistakes. Check important info. See Cookie Preferences.
+while i <= n:
+    sum += i
+    i += 1
+
+print("Sum =", sum)
+Practice Set – Chapter 7
+Q1. Write a program to print the multiplication table of a given number using for loop.
+n = int(input("Enter a number: "))
+
+for i in range(1, 11):
+    print(f"{n} × {i} = {n * i}")
+Q2. Write a program to get all the person names stored in a list which start with “S”.
+names = ["Vidhi", "Saba", "Sahil", "Vikram"]
+
+for name in names:
+    if name.startswith("S"):
+        print(f"Hello {name}")
+Output:
+
+Hello Saba
+Hello Sahil
+Q3. Do the 1st question again using while loop.
+n = int(input("Enter a number: "))
+
+i = 1
+while i <= 10:
+    print(f"{n} × {i} = {n * i}")
+    i +=1
