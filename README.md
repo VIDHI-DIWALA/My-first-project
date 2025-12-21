@@ -17,5 +17,8 @@ I will keep updating this repository regularly as I improve my Python skills.
 
 ---
 
+## Mini Project: Student Result Calculator 🧮
 
+- File: `student_result.py`
+- Description: Calculates total marks, percentage and grade (A/B/C/D/F) for a student using Python.
 
